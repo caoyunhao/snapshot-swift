@@ -8,19 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		A229E262237EC0760097510B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E261237EC0760097510B /* AppDelegate.swift */; };
-		A229E264237EC0760097510B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E263237EC0760097510B /* ViewController.swift */; };
 		A229E266237EC0770097510B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A229E265237EC0770097510B /* Assets.xcassets */; };
 		A229E269237EC0770097510B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A229E267237EC0770097510B /* Main.storyboard */; };
+		A229E27A237EC0BF0097510B /* NSEventModifierFlags+HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E274237EC0BF0097510B /* NSEventModifierFlags+HotKey.swift */; };
+		A229E27B237EC0BF0097510B /* KeyCombo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E275237EC0BF0097510B /* KeyCombo.swift */; };
+		A229E27C237EC0BF0097510B /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E276237EC0BF0097510B /* Key.swift */; };
+		A229E27D237EC0BF0097510B /* HotKeysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E277237EC0BF0097510B /* HotKeysController.swift */; };
+		A229E27E237EC0BF0097510B /* KeyCombo+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E278237EC0BF0097510B /* KeyCombo+System.swift */; };
+		A229E27F237EC0BF0097510B /* HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E279237EC0BF0097510B /* HotKey.swift */; };
+		A229E281237EC0C80097510B /* snip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E280237EC0C80097510B /* snip.swift */; };
+		A229E283237EC0F10097510B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A229E282237EC0F10097510B /* Assets.xcassets */; };
+		A229E285237EC1B60097510B /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A229E284237EC1B50097510B /* logger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A229E25E237EC0760097510B /* Snapshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A229E261237EC0760097510B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A229E263237EC0760097510B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A229E265237EC0770097510B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A229E268237EC0770097510B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A229E26A237EC0770097510B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A229E26B237EC0770097510B /* Snapshot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Snapshot.entitlements; sourceTree = "<group>"; };
+		A229E274237EC0BF0097510B /* NSEventModifierFlags+HotKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSEventModifierFlags+HotKey.swift"; sourceTree = "<group>"; };
+		A229E275237EC0BF0097510B /* KeyCombo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCombo.swift; sourceTree = "<group>"; };
+		A229E276237EC0BF0097510B /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		A229E277237EC0BF0097510B /* HotKeysController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKeysController.swift; sourceTree = "<group>"; };
+		A229E278237EC0BF0097510B /* KeyCombo+System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyCombo+System.swift"; sourceTree = "<group>"; };
+		A229E279237EC0BF0097510B /* HotKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotKey.swift; sourceTree = "<group>"; };
+		A229E280237EC0C80097510B /* snip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = snip.swift; sourceTree = "<group>"; };
+		A229E282237EC0F10097510B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../MacApps/MyMacApp/MyMacApp/Assets.xcassets; sourceTree = "<group>"; };
+		A229E284237EC1B50097510B /* logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +69,46 @@
 		A229E260237EC0760097510B /* Snapshot */ = {
 			isa = PBXGroup;
 			children = (
+				A229E271237EC08E0097510B /* core */,
 				A229E261237EC0760097510B /* AppDelegate.swift */,
-				A229E263237EC0760097510B /* ViewController.swift */,
 				A229E265237EC0770097510B /* Assets.xcassets */,
 				A229E267237EC0770097510B /* Main.storyboard */,
 				A229E26A237EC0770097510B /* Info.plist */,
+				A229E282237EC0F10097510B /* Assets.xcassets */,
 				A229E26B237EC0770097510B /* Snapshot.entitlements */,
 			);
 			path = Snapshot;
+			sourceTree = "<group>";
+		};
+		A229E271237EC08E0097510B /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A229E272237EC0A70097510B /* ext */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		A229E272237EC0A70097510B /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				A229E280237EC0C80097510B /* snip.swift */,
+				A229E284237EC1B50097510B /* logger.swift */,
+				A229E273237EC0BF0097510B /* hot-key */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		A229E273237EC0BF0097510B /* hot-key */ = {
+			isa = PBXGroup;
+			children = (
+				A229E274237EC0BF0097510B /* NSEventModifierFlags+HotKey.swift */,
+				A229E275237EC0BF0097510B /* KeyCombo.swift */,
+				A229E276237EC0BF0097510B /* Key.swift */,
+				A229E277237EC0BF0097510B /* HotKeysController.swift */,
+				A229E278237EC0BF0097510B /* KeyCombo+System.swift */,
+				A229E279237EC0BF0097510B /* HotKey.swift */,
+			);
+			path = "hot-key";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A229E266237EC0770097510B /* Assets.xcassets in Resources */,
+				A229E283237EC0F10097510B /* Assets.xcassets in Resources */,
 				A229E269237EC0770097510B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,8 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A229E264237EC0760097510B /* ViewController.swift in Sources */,
+				A229E27D237EC0BF0097510B /* HotKeysController.swift in Sources */,
+				A229E27E237EC0BF0097510B /* KeyCombo+System.swift in Sources */,
+				A229E27A237EC0BF0097510B /* NSEventModifierFlags+HotKey.swift in Sources */,
+				A229E27C237EC0BF0097510B /* Key.swift in Sources */,
+				A229E27B237EC0BF0097510B /* KeyCombo.swift in Sources */,
 				A229E262237EC0760097510B /* AppDelegate.swift in Sources */,
+				A229E27F237EC0BF0097510B /* HotKey.swift in Sources */,
+				A229E281237EC0C80097510B /* snip.swift in Sources */,
+				A229E285237EC1B60097510B /* logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LMJK2Q96M9;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = Snapshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +349,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = LMJK2Q96M9;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = Snapshot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
